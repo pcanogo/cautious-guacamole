@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif; -->
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="navigation__title">
+            <a href="" >Chef Pablo</a>
+        </div>
+        <nav >
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="recipe">
+            <div class="container">
+                <h1>How To Make Guacamole</h3>
+                <div class="recipe__image"><img src="./images/guac.jpg" alt="guacamole" height="400px"></div>
+                <p>
+                    Time to make: 
+                    <span class="time_required">10 mins</span>  
+                    <b>-</b>   
+                    Difficulty: 
+                    <span class="difficulty">Beginner</span> 
+                </p>
+                
+                <div class="recipe__btn">
+                    <a href="">Save</a>
+                </div>
+
+                <div>
+                    <h2>Ingridients</h2>
+                    <div class="recipe__content-grid">
+                        <div class="recipe__image">
+                            <img src="./images/ing.jpg" alt="ingridients" height="200px">
+                        </div>
+                        <div class="recipe__ingridients">
+                            <ul >
+                                <li>2 Hass Avocados</li>
+                                <li>1/2 Onion (Of your choice)</li>
+                                <li>1 Tomato</li>
+                                <li>1 Lime</li>
+                                <li>5g Coriander</li>
+                                <li>1/2tp Salt</li>
+                                <li>1/2tp Pepper</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Steps</h2>
+                    <div >
+                        <div class="recipe__image">
+                            <img src="./images/steps.jpg" alt="steps" height="200px">
+                        </div>
+                        <div class="recipe__steps">
+                            <ol>
+                                <li>Dice tomatoes and onions into small pieces.</li>
+                                <li>Chop up coriander</li>
+                                <li>Use a knife to cut the Avocados in half, cutting through the long side to make sure pieces are even.</li>
+                                <li>Take out the seed then use a spoon to take out the contents of the avocados into a bowl</li>
+                                <li>Using to forks mash the avocados.</li>
+                                <li>Add the tomatoes, onions, salt, pepper, coriander and juice from the Lime</li>
+                                <li>Mix some more</li>
+                                <li>???</li>
+                                <li>Profit</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="color-game">
+        <div class="container">
+            <p class="color-game__question">
+                What color is... <span id="color"></span>
+            </p>
+        </div>
+        <div class="container color-game__scores">
+            <p  class="color-game_score">Score: <span id="score">0</span></p>
+            <p  class="color-game__highscore">High Score: <span id="highscore">0</span></p>
+        </div>
+        </div>
+        <div class="container">
+            <p id="game-msg" class="color-game__msg"></p>
+        </div>
+        <div class="container color-game__container">
+            <div id="box-1" class="color-game__box color-game__box--1">Color 1</div>
+            <div id="box-2" class="color-game__box color-game__box--2">Color 2</div>
+            <div id="box-3" class="color-game__box color-game__box--3">Color 3</div>
+        </div>
+        <div class="container color-game__container">
+            <div id="box-4" class="color-game__box color-game__box--4">Color 4</div>
+            <div id="box-5" class="color-game__box color-game__box--5">Color 5</div>
+            <div id="box-6" class="color-game__box color-game__box--6">Color 6</div>
+        </div>
+    </section>
+</body>
+<script src="./recipe.js"></script>
+
+</html>

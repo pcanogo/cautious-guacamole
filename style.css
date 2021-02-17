@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 3rem 0;
+    position: relative;
+    display: inline-block;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h1::before,
+h2::before{
+    content: '';
+    width: 40px;
+    border-bottom: solid .3rem #2ecc71;
+    position: absolute;
+    top: -10;
+    left: 0;
+}
+
+
+.navigation{
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(to left top,#2ecc71, #1d8147);
+}
+
+.navigation__title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight:900;
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+}
+
+.navigation__title a{
+    color: #fff;   
+}
+
+.recipe{
+    text-align:center;
+    font-size: 1.8rem;
+    margin: 80px 50px;
+    
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.recipe__image img{
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: solid 2px #2ecc71;
+}
+
+.recipe__btn{
+    display: inline-block;
+    background-color: #2ecc71;
+    padding: 1.5rem 3rem;
+    margin: 2rem 0;
+    
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color .4s ;
+}
+
+.recipe__btn a{
+    color:#fff;
+}
+
+.recipe__btn:hover {
+    background-color: #1d8147;
+}
+
+.recipe__ingridients,
+.recipe__steps{
+    text-align: left;
+    display: inline-block;
+}
+.recipe__ingridients{
+    margin-left: 3rem;
+}
+
+.time_required,
+.difficulty{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2ecc71;
+}
+
+.recipe__content-grid{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.color-game{
+    margin: 200px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+.color-game__container{
+    display: flex;
+    justify-content: center;
+}
+
+.color-game__question{
+    text-align: center;
+    
+}
+
+#color{
+    font-weight: 900;
+}
+
+.color-game__msg{
+    margin: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.success-msg{
+    color: #2ecc71;
+}
+
+.failure-msg{
+    color: crimson;
+}
+
+.color-game__scores{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.color-game__scores p{
+    margin: 0 15px;
+}
+
+.color-game__box{
+    width: 15rem;
+    height: 15rem;
+    margin: 50px;
+    text-align: center;
+    line-height: 15rem;
+    color: #fff;
+    transition: box-shadow .2s, transform .2s, opacity .8s;
+}
+
+.color-game__box:hover{
+    transform: scale(1.07);
+    -webkit-box-shadow: 0px 7px 21px -4px rgba(0,0,0,0.66);
+    -moz-box-shadow: 0px 7px 21px -4px rgba(0,0,0,0.66);
+    box-shadow: 0px 7px 21px -4px rgba(0,0,0,0.66);
+}
+
+.color-game__box:active{
+    transform: scale(1.03);
+}

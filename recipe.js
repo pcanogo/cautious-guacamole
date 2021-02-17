@@ -81,30 +81,27 @@ const checkAnswer = (el) => {
 
 const changeBoard = () => {
     initBoard();
-    boxes.map(x => x.style.opacity = 1);
+    boxes.forEach(x => x.style.opacity = 1);
 };
 
 const initGame = () => {
-    
-    boxes[0].addEventListener("click", function(){checkAnswer(boxes[0]);});
-    boxes[1].addEventListener("click", function(){checkAnswer(boxes[1]);});
-    boxes[2].addEventListener("click", function(){checkAnswer(boxes[2]);});
-    boxes[3].addEventListener("click", function(){checkAnswer(boxes[3]);});
-    boxes[4].addEventListener("click", function(){checkAnswer(boxes[4]);});
-    boxes[5].addEventListener("click", function(){checkAnswer(boxes[5]);}) ;
+    boxes.forEach((box,i) => {
+        box.addEventListener("click", function(){checkAnswer(boxes[i]);});
+    })
+};
 
+const tearDownGame = () => {
+    boxes.forEach((box,i) => {
+        box.removeEventListener("click", function(){checkAnswer(boxes[i]);});
+    })
 };
 
 const initBoard = () => {
     colors = new Array(6).fill().map(()=>getRandomColor());
-    boxes[0].style.backgroundColor = colors[0];
-    boxes[1].style.backgroundColor = colors[1];
-    boxes[2].style.backgroundColor = colors[2];
-    boxes[3].style.backgroundColor = colors[3];
-    boxes[4].style.backgroundColor = colors[4];
-    boxes[5].style.backgroundColor = colors[5];
-
-    boxes.map(x => x.style.opacity = 1);
+    boxes.forEach((box,i) => {
+        box.style.backgroundColor = colors[i];
+        box.style.opacity = 1;
+    })
     answer = getRandomAnswer();
     document.getElementById("color").innerHTML = answer;
 };

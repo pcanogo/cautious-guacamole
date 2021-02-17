@@ -77,7 +77,6 @@ const checkAnswer = (el) => {
         el.style.opacity = 0;
         msgElement.innerHTML = getSad();
     }
-    console.log(score);
 };
 
 const changeBoard = () => {
